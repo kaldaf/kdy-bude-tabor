@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="faicon.png" type="image/x-icon" />
+    <title>KDY ZAČNE III TURNUS?</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <h1>KDY ZAČNE III. TURNUS?</h1>
+        </nav>
+        <div class="block">
+            <div class="content">
+                <div class="content-text">
+                    <h1>Zůstaňte v pozoru, <br> brzy startujeme!</h1>
+                    <form style="display:none !important">
+                        <div id="inputBlock" class="is-floating-label">
+                            <label>E-mail</label>
+                            <input id="inputId" type="email" onfocus="FloatLabel(this)" onfocusout="RemoveFocus(this)">
+                        </div>
+                        <button onclick="sendEmail()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-send">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </form>
+                    <ul id="countdown" class="first">
+                        <li>
+                            <h1 id="dayNumber"></h1>
+                            <span id="daySpan"></span>
+                        </li>
+                        <li>
+                            <h1 id="hourNumber"></h1>
+                            <span id="hourSpan"></span>
+                        </li>
+                        <li>
+                            <h1 id="minuteNumber"></h1>
+                            <span id="minuteSpan"></span>
+                        </li>
+                        <li>
+                            <h1 id="secondNumber"></h1>
+                            <span id="secondSpan"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="block rocket">
+            <div class="content">
+                <div id="animationId" class="animation">
+                    <img id="rocketId" src="rocket.svg" alt="Rocket">
+                    <ul class="exhaust-fumes">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul class="star">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="content-text">
+                    <ul id="countdownRocket" class="second">
+                        <li>
+                            <h1 id="dayNumberRocket"></h1>
+                            <span id="daySpanRocket"></span>
+                        </li>
+                        <li>
+                            <h1 id="hourNumberRocket"></h1>
+                            <span id="hourSpanRocket"></span>
+                        </li>
+                        <li>
+                            <h1 id="minuteNumberRocket"></h1>
+                            <span id="minuteSpanRocket"></span>
+                        </li>
+                        <li>
+                            <h1 id="secondNumberRocket"></h1>
+                            <span id="secondSpanRocket"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a href="https://filipkalousek.cz" target="_blank">
+            filipkalousek.cz
+        </a>
+    </footer>
+    <script src="js/moment.js"></script>
+    <script src="js/moment-locales.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
