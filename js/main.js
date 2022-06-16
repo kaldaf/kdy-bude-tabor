@@ -59,7 +59,7 @@ var blockInputGroup = document.getElementById("inputBlock");
         const x =this;
 
         setInterval(function() {
-            var eventDate = moment('2022-08-24 14:00:00'),
+            var eventDate = moment('2022-07-24 14:00:00'),
             actualDate = moment(new Date(), 'YYYY-MM-DD hh:mm:ss');
 
             var start = moment.utc(actualDate, "HH:mm");
