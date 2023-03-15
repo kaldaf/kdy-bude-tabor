@@ -11,7 +11,6 @@
     <meta property="og:description" content="Pro odpočet mrkni na tuhle stránku! A pokud tě nebaví čekat, mrkni na video z minulého roku!" />
     <meta property="og:image" content="https://trojka.filipkalousek.cz/og-image.jpg" />
   </head>
-
   <body>
     <nav>
       <h1>KDY ZAČNE III. TURNUS?</h1>
@@ -64,9 +63,8 @@
         <a data-share>sdílej</a>
       </div>
     </footer>
-    <script src="./confetti.min.js"></script>
-    <script src="./main.min.js"></script>
     <script>
+      const endDate = new Date('2023-07-24 14:00:00');
       const share = document
         .querySelector("[data-share]")
         .addEventListener("click", () => {
@@ -81,5 +79,7 @@
           });
         });
     </script>
+    <script src="./confetti.min.js"></script>
+    <script src="./main.min.js"></script>
   </body>
 </html>
